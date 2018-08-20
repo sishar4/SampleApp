@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		349079DA212A498C0074DE6B /* SearchTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349079D9212A498C0074DE6B /* SearchTask.swift */; };
+		349079DF212A4A8B0074DE6B /* MeetupGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349079DE212A4A8B0074DE6B /* MeetupGroup.swift */; };
+		349079E1212A4D370074DE6B /* SearchMeetupsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349079E0212A4D370074DE6B /* SearchMeetupsResponse.swift */; };
 		34AA73902129FEB40033B8C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA738F2129FEB40033B8C9 /* AppDelegate.swift */; };
-		34AA73922129FEB40033B8C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA73912129FEB40033B8C9 /* ViewController.swift */; };
 		34AA73952129FEB40033B8C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34AA73932129FEB40033B8C9 /* Main.storyboard */; };
 		34AA73972129FEB50033B8C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34AA73962129FEB50033B8C9 /* Assets.xcassets */; };
 		34AA739A2129FEB50033B8C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34AA73982129FEB50033B8C9 /* LaunchScreen.storyboard */; };
@@ -21,6 +23,9 @@
 		34AA73D6212A094C0033B8C9 /* SANetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA73D5212A094C0033B8C9 /* SANetworkResponse.swift */; };
 		34AA73DC212A0E3A0033B8C9 /* SANetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA73DB212A0E3A0033B8C9 /* SANetworkError.swift */; };
 		34AA73DE212A10200033B8C9 /* SANetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA73DD212A10200033B8C9 /* SANetworkManager.swift */; };
+		34AA73E0212A3D0D0033B8C9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA73DF212A3D0D0033B8C9 /* Constants.swift */; };
+		34AA73E3212A424F0033B8C9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA73E2212A424F0033B8C9 /* SearchViewController.swift */; };
+		34AA73E6212A435F0033B8C9 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA73E5212A435F0033B8C9 /* SearchPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		349079D9212A498C0074DE6B /* SearchTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTask.swift; sourceTree = "<group>"; };
+		349079DE212A4A8B0074DE6B /* MeetupGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupGroup.swift; sourceTree = "<group>"; };
+		349079E0212A4D370074DE6B /* SearchMeetupsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMeetupsResponse.swift; sourceTree = "<group>"; };
 		34AA738C2129FEB40033B8C9 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34AA738F2129FEB40033B8C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		34AA73912129FEB40033B8C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		34AA73942129FEB40033B8C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34AA73962129FEB50033B8C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34AA73992129FEB50033B8C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +68,9 @@
 		34AA73D5212A094C0033B8C9 /* SANetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SANetworkResponse.swift; sourceTree = "<group>"; };
 		34AA73DB212A0E3A0033B8C9 /* SANetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SANetworkError.swift; sourceTree = "<group>"; };
 		34AA73DD212A10200033B8C9 /* SANetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SANetworkManager.swift; sourceTree = "<group>"; };
+		34AA73DF212A3D0D0033B8C9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		34AA73E2212A424F0033B8C9 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		34AA73E5212A435F0033B8C9 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +98,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		349079DB212A4A3A0074DE6B /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				349079DC212A4A520074DE6B /* Model */,
+			);
+			path = Results;
+			sourceTree = "<group>";
+		};
+		349079DC212A4A520074DE6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		349079DD212A4A670074DE6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				349079DE212A4A8B0074DE6B /* MeetupGroup.swift */,
+				349079E0212A4D370074DE6B /* SearchMeetupsResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		34AA73832129FEB40033B8C9 = {
 			isa = PBXGroup;
 			children = (
@@ -113,7 +147,7 @@
 			children = (
 				34AA738F2129FEB40033B8C9 /* AppDelegate.swift */,
 				34AA73932129FEB40033B8C9 /* Main.storyboard */,
-				34AA73912129FEB40033B8C9 /* ViewController.swift */,
+				34AA73E1212A423F0033B8C9 /* UserInterface */,
 				34AA73C02129FF570033B8C9 /* Networking */,
 				34AA73BD2129FEC60033B8C9 /* SupportingFiles */,
 				34AA73BE2129FF140033B8C9 /* Resources */,
@@ -160,6 +194,7 @@
 		34AA73BF2129FF3E0033B8C9 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				34AA73DF212A3D0D0033B8C9 /* Constants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -224,6 +259,26 @@
 				34AA73C8212A00220033B8C9 /* SAServiceRequest.swift */,
 			);
 			path = Request;
+			sourceTree = "<group>";
+		};
+		34AA73E1212A423F0033B8C9 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				34AA73E4212A43410033B8C9 /* Search */,
+				349079DB212A4A3A0074DE6B /* Results */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		34AA73E4212A43410033B8C9 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				349079DD212A4A670074DE6B /* Model */,
+				34AA73E2212A424F0033B8C9 /* SearchViewController.swift */,
+				34AA73E5212A435F0033B8C9 /* SearchPresenter.swift */,
+				349079D9212A498C0074DE6B /* SearchTask.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,12 +412,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				349079DF212A4A8B0074DE6B /* MeetupGroup.swift in Sources */,
+				349079DA212A498C0074DE6B /* SearchTask.swift in Sources */,
+				34AA73E6212A435F0033B8C9 /* SearchPresenter.swift in Sources */,
+				34AA73E3212A424F0033B8C9 /* SearchViewController.swift in Sources */,
 				34AA73C72129FFFF0033B8C9 /* SAServiceResponse.swift in Sources */,
-				34AA73922129FEB40033B8C9 /* ViewController.swift in Sources */,
 				34AA73DE212A10200033B8C9 /* SANetworkManager.swift in Sources */,
 				34AA73902129FEB40033B8C9 /* AppDelegate.swift in Sources */,
 				34AA73CB212A002D0033B8C9 /* SAServiceError.swift in Sources */,
+				34AA73E0212A3D0D0033B8C9 /* Constants.swift in Sources */,
 				34AA73CE212A05450033B8C9 /* SAServiceHTTPMethod.swift in Sources */,
+				349079E1212A4D370074DE6B /* SearchMeetupsResponse.swift in Sources */,
 				34AA73D6212A094C0033B8C9 /* SANetworkResponse.swift in Sources */,
 				34AA73C9212A00220033B8C9 /* SAServiceRequest.swift in Sources */,
 				34AA73DC212A0E3A0033B8C9 /* SANetworkError.swift in Sources */,
