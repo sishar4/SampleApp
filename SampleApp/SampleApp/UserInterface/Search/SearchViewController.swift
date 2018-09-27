@@ -45,13 +45,12 @@ class SearchViewController: UIViewController {
         if self.cityStateTF.text?.isEmpty ?? true && self.zipCodeTF.text?.isEmpty ?? true {
             return false
         }
-        
         return true
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        errorLabel.text = Constants.searchFormErrorLabel
+        errorLabel.text = presenter.getLocalizedText(errorLabel.accessibilityIdentifier!)
         errorLabel.isHidden = true
     }
     

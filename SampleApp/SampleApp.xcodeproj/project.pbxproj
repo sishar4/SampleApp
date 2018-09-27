@@ -14,7 +14,6 @@
 		34AA73952129FEB40033B8C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34AA73932129FEB40033B8C9 /* Main.storyboard */; };
 		34AA73972129FEB50033B8C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34AA73962129FEB50033B8C9 /* Assets.xcassets */; };
 		34AA739A2129FEB50033B8C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34AA73982129FEB50033B8C9 /* LaunchScreen.storyboard */; };
-		34AA73A52129FEB50033B8C9 /* SampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA73A42129FEB50033B8C9 /* SampleAppTests.swift */; };
 		34AA73B02129FEB50033B8C9 /* SampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA73AF2129FEB50033B8C9 /* SampleAppUITests.swift */; };
 		34AA73C72129FFFF0033B8C9 /* SAServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA73C62129FFFF0033B8C9 /* SAServiceResponse.swift */; };
 		34AA73C9212A00220033B8C9 /* SAServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA73C8212A00220033B8C9 /* SAServiceRequest.swift */; };
@@ -26,6 +25,9 @@
 		34AA73E0212A3D0D0033B8C9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA73DF212A3D0D0033B8C9 /* Constants.swift */; };
 		34AA73E3212A424F0033B8C9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA73E2212A424F0033B8C9 /* SearchViewController.swift */; };
 		34AA73E6212A435F0033B8C9 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA73E5212A435F0033B8C9 /* SearchPresenter.swift */; };
+		34CF8635215CECB600A1F6DE /* ServiceRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CF8634215CECB600A1F6DE /* ServiceRequestTests.swift */; };
+		34CF8637215CF57500A1F6DE /* ServiceErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CF8636215CF57500A1F6DE /* ServiceErrorTests.swift */; };
+		34CF8639215CF7D600A1F6DE /* SearchPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CF8638215CF7D600A1F6DE /* SearchPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +58,6 @@
 		34AA73992129FEB50033B8C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34AA739B2129FEB50033B8C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34AA73A02129FEB50033B8C9 /* SampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		34AA73A42129FEB50033B8C9 /* SampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppTests.swift; sourceTree = "<group>"; };
 		34AA73A62129FEB50033B8C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34AA73AB2129FEB50033B8C9 /* SampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34AA73AF2129FEB50033B8C9 /* SampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppUITests.swift; sourceTree = "<group>"; };
@@ -71,6 +72,10 @@
 		34AA73DF212A3D0D0033B8C9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		34AA73E2212A424F0033B8C9 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		34AA73E5212A435F0033B8C9 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		34CF8633215CECB600A1F6DE /* SampleAppTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleAppTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		34CF8634215CECB600A1F6DE /* ServiceRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequestTests.swift; sourceTree = "<group>"; };
+		34CF8636215CF57500A1F6DE /* ServiceErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceErrorTests.swift; sourceTree = "<group>"; };
+		34CF8638215CF7D600A1F6DE /* SearchPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,8 +163,11 @@
 		34AA73A32129FEB50033B8C9 /* SampleAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				34AA73A42129FEB50033B8C9 /* SampleAppTests.swift */,
 				34AA73A62129FEB50033B8C9 /* Info.plist */,
+				34CF8634215CECB600A1F6DE /* ServiceRequestTests.swift */,
+				34CF8636215CF57500A1F6DE /* ServiceErrorTests.swift */,
+				34CF8638215CF7D600A1F6DE /* SearchPresenterTests.swift */,
+				34CF8633215CECB600A1F6DE /* SampleAppTests-Bridging-Header.h */,
 			);
 			path = SampleAppTests;
 			sourceTree = "<group>";
@@ -184,6 +192,7 @@
 		34AA73BE2129FF140033B8C9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				34CF8632215CEC4000A1F6DE /* Localization */,
 				34AA739B2129FEB50033B8C9 /* Info.plist */,
 				34AA73962129FEB50033B8C9 /* Assets.xcassets */,
 				34AA73982129FEB50033B8C9 /* LaunchScreen.storyboard */,
@@ -281,6 +290,13 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		34CF8632215CEC4000A1F6DE /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -352,6 +368,7 @@
 					};
 					34AA739F2129FEB50033B8C9 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = 34AA738B2129FEB40033B8C9;
 					};
 					34AA73AA2129FEB50033B8C9 = {
@@ -433,7 +450,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34AA73A52129FEB50033B8C9 /* SampleAppTests.swift in Sources */,
+				34CF8639215CF7D600A1F6DE /* SearchPresenterTests.swift in Sources */,
+				34CF8637215CF57500A1F6DE /* ServiceErrorTests.swift in Sources */,
+				34CF8635215CECB600A1F6DE /* ServiceRequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,6 +654,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X7FY4GCXX5;
 				INFOPLIST_FILE = SampleAppTests/Info.plist;
@@ -645,6 +665,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sishar.SampleAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SampleAppTests/SampleAppTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleApp.app/SampleApp";
@@ -656,6 +678,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X7FY4GCXX5;
 				INFOPLIST_FILE = SampleAppTests/Info.plist;
@@ -666,6 +689,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sishar.SampleAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SampleAppTests/SampleAppTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleApp.app/SampleApp";

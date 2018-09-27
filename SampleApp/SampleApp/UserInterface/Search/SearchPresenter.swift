@@ -10,6 +10,10 @@ import Foundation
 
 final class SearchPresenter {
     
+    func getLocalizedText(_ label: String) -> String {
+        // TODO: get localized string for label name
+        return Constants.searchFormErrorLabel
+    }
 }
 
 extension SearchPresenter: SearchTask {

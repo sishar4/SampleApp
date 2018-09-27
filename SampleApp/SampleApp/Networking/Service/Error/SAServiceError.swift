@@ -15,9 +15,9 @@ protocol SAServiceError {
 }
 
 struct ServiceError: SAServiceError {
-    var code: Int?
+    let code: Int?
     
-    var domain: String?
+    let domain: String?
     
-    var networkErrorMessage: SANetworkError
+    let networkErrorMessage: SANetworkError
 }

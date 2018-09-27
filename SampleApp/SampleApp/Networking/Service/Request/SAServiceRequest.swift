@@ -14,6 +14,16 @@ protocol SAServiceRequest {
     var headers: [String: String] { get }
     var body: [String: Any]? { get }
     var timeoutInterval: Int? { get }
+}
+
+struct ServiceRequest: SAServiceRequest {
+    let method: SAServiceHTTPMethod
     
-    init(_ url: String, headers: [String: String], body: [String: Any]?, timeoutInterval: Int?)
+    let url: String
+    
+    let headers: [String : String]
+    
+    let body: [String : Any]?
+    
+    let timeoutInterval: Int?
 }
