@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		349079DA212A498C0074DE6B /* SearchTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349079D9212A498C0074DE6B /* SearchTask.swift */; };
 		349079DF212A4A8B0074DE6B /* MeetupGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349079DE212A4A8B0074DE6B /* MeetupGroup.swift */; };
 		349079E1212A4D370074DE6B /* SearchMeetupsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349079E0212A4D370074DE6B /* SearchMeetupsResponse.swift */; };
 		34AA73902129FEB40033B8C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA738F2129FEB40033B8C9 /* AppDelegate.swift */; };
@@ -24,7 +23,9 @@
 		34AA73DE212A10200033B8C9 /* SANetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA73DD212A10200033B8C9 /* SANetworkManager.swift */; };
 		34AA73E0212A3D0D0033B8C9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA73DF212A3D0D0033B8C9 /* Constants.swift */; };
 		34AA73E3212A424F0033B8C9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA73E2212A424F0033B8C9 /* SearchViewController.swift */; };
-		34AA73E6212A435F0033B8C9 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA73E5212A435F0033B8C9 /* SearchPresenter.swift */; };
+		34AA73E6212A435F0033B8C9 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AA73E5212A435F0033B8C9 /* SearchViewModel.swift */; };
+		34C6A1A3218D5E5C00D506B2 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C6A1A2218D5E5C00D506B2 /* SearchCoordinator.swift */; };
+		34C6A1A6218D5F3200D506B2 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34C6A1A5218D5F3200D506B2 /* SearchViewController.xib */; };
 		34CF8635215CECB600A1F6DE /* ServiceRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CF8634215CECB600A1F6DE /* ServiceRequestTests.swift */; };
 		34CF8637215CF57500A1F6DE /* ServiceErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CF8636215CF57500A1F6DE /* ServiceErrorTests.swift */; };
 		34CF8639215CF7D600A1F6DE /* SearchPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CF8638215CF7D600A1F6DE /* SearchPresenterTests.swift */; };
@@ -48,7 +49,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		349079D9212A498C0074DE6B /* SearchTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTask.swift; sourceTree = "<group>"; };
 		349079DE212A4A8B0074DE6B /* MeetupGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupGroup.swift; sourceTree = "<group>"; };
 		349079E0212A4D370074DE6B /* SearchMeetupsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMeetupsResponse.swift; sourceTree = "<group>"; };
 		34AA738C2129FEB40033B8C9 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,7 +71,9 @@
 		34AA73DD212A10200033B8C9 /* SANetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SANetworkManager.swift; sourceTree = "<group>"; };
 		34AA73DF212A3D0D0033B8C9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		34AA73E2212A424F0033B8C9 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		34AA73E5212A435F0033B8C9 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		34AA73E5212A435F0033B8C9 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		34C6A1A2218D5E5C00D506B2 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		34C6A1A5218D5F3200D506B2 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		34CF8633215CECB600A1F6DE /* SampleAppTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleAppTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		34CF8634215CECB600A1F6DE /* ServiceRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequestTests.swift; sourceTree = "<group>"; };
 		34CF8636215CF57500A1F6DE /* ServiceErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceErrorTests.swift; sourceTree = "<group>"; };
@@ -282,12 +284,21 @@
 		34AA73E4212A43410033B8C9 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				34C6A1A4218D5F0C00D506B2 /* Views */,
 				349079DD212A4A670074DE6B /* Model */,
 				34AA73E2212A424F0033B8C9 /* SearchViewController.swift */,
-				34AA73E5212A435F0033B8C9 /* SearchPresenter.swift */,
-				349079D9212A498C0074DE6B /* SearchTask.swift */,
+				34AA73E5212A435F0033B8C9 /* SearchViewModel.swift */,
+				34C6A1A2218D5E5C00D506B2 /* SearchCoordinator.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		34C6A1A4218D5F0C00D506B2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				34C6A1A5218D5F3200D506B2 /* SearchViewController.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		34CF8632215CEC4000A1F6DE /* Localization */ = {
@@ -404,6 +415,7 @@
 			files = (
 				34AA739A2129FEB50033B8C9 /* LaunchScreen.storyboard in Resources */,
 				34AA73972129FEB50033B8C9 /* Assets.xcassets in Resources */,
+				34C6A1A6218D5F3200D506B2 /* SearchViewController.xib in Resources */,
 				34AA73952129FEB40033B8C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,12 +442,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				349079DF212A4A8B0074DE6B /* MeetupGroup.swift in Sources */,
-				349079DA212A498C0074DE6B /* SearchTask.swift in Sources */,
-				34AA73E6212A435F0033B8C9 /* SearchPresenter.swift in Sources */,
+				34AA73E6212A435F0033B8C9 /* SearchViewModel.swift in Sources */,
 				34AA73E3212A424F0033B8C9 /* SearchViewController.swift in Sources */,
 				34AA73C72129FFFF0033B8C9 /* SAServiceResponse.swift in Sources */,
 				34AA73DE212A10200033B8C9 /* SANetworkManager.swift in Sources */,
 				34AA73902129FEB40033B8C9 /* AppDelegate.swift in Sources */,
+				34C6A1A3218D5E5C00D506B2 /* SearchCoordinator.swift in Sources */,
 				34AA73CB212A002D0033B8C9 /* SAServiceError.swift in Sources */,
 				34AA73E0212A3D0D0033B8C9 /* Constants.swift in Sources */,
 				34AA73CE212A05450033B8C9 /* SAServiceHTTPMethod.swift in Sources */,

@@ -20,8 +20,29 @@ class SearchPresenterTests: XCTestCase {
     }
 
     func testGetLocalizedString() {
-        let presenter = SearchPresenter()
+        let presenter = SearchViewModel()
         let localizedStr = presenter.getLocalizedText("test")
         XCTAssertEqual(localizedStr, Constants.searchFormErrorLabel)
+    }
+    
+    func testSearch() {
+        
+        let expectation = self.expectation(description: "Searching")
+        
+        let mockPresenter = MockSearchPresenter()
+        mockPresenter.search("NY", zip: "11021") { (response, error) in
+            XCTAssertNotNil(response)
+            expectation.fulfill()
+        }
+        
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+}
+
+class MockSearchPresenter: NSObject, SearchMeetups {
+    func search(_ cityState: String?, zip: String?, completion: @escaping SearchCompletion) {
+        let meetup = MeetupGroup(id: 1, name: "Futsal NYC", description: "Futsal NYC", url: "http:www.nyc.com")
+        let response = SearchMeetupsResponse(meetups: [meetup])
+        completion(response, nil)
     }
 }

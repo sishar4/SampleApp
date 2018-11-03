@@ -15,11 +15,11 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var searchBtn: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
     
-    var presenter: SearchPresenter = SearchPresenter()
+    lazy var presenter: SearchViewModel = SearchViewModel(networkManager: NetworkManager())
     
     @IBAction func searchClicked(_ sender: Any) {
         
-        if isValidSearch() {
+        if !isValidSearch() {
             errorLabel.isHidden = false
             return
         }

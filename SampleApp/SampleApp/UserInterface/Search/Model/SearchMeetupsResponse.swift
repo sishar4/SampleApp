@@ -10,7 +10,7 @@ import Foundation
 
 struct SearchMeetupsResponse {
     
-    let meetups: [MeetupGroup]
+//    let meetups: [MeetupGroup]
 }
 
 extension SearchMeetupsResponse: SAServiceResponse {
@@ -22,6 +22,6 @@ extension SearchMeetupsResponse: SAServiceResponse {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: SearchMeetupsResponseCodingKeys.self)
         
-        meetups = try container.decode([MeetupGroup].self, forKey: .meetups)
+//        meetups = try container.decode([MeetupGroup].self, forKey: .meetups)
     }
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum SANetworkResponse<String> {
+enum SANetworkResponse<SANetworkError> {
     case success
-    case failure(String)
+    case failure(SANetworkError)
 }

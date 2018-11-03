@@ -13,6 +13,7 @@ protocol SAServiceRequest {
     var url: String { get }
     var headers: [String: String] { get }
     var body: [String: Any]? { get }
+    var queryParams: [String: String]? { get }
     var timeoutInterval: Int? { get }
 }
 
@@ -24,6 +25,8 @@ struct ServiceRequest: SAServiceRequest {
     let headers: [String : String]
     
     let body: [String : Any]?
+    
+    let queryParams: [String : String]?
     
     let timeoutInterval: Int?
 }
